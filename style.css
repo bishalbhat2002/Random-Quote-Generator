@@ -1,0 +1,102 @@
+/* General CSS Rules */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: url('background.webp');
+  background-size: cover;
+  background-position: 51%;
+}
+nav {
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  h1 a {
+    font-size: 3rem;
+    color: rgb(234, 140, 8);
+    margin-left: 2rem;
+    text-decoration: none;
+  }
+  
+}
+main {
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 30rem;
+  width: 40rem;
+  margin: 1rem;
+  background-color: rgba(218, 211, 211, 0.8);
+  padding: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 3rem rgb(28, 28, 28);
+}
+
+.container .quote {
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 490;
+
+}
+.container .quote, .person{
+  color: rgb(25, 23, 23);
+  
+}
+.container .person {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+.container .btn {
+  height: 4rem;
+  width: 10rem;
+  border-radius: 2rem;
+  border: none;
+  margin-top: 2rem;
+  background-color: rgb(51, 50, 50);
+  font-size: 2rem;
+  font-weight: 450;
+  color: rgb(221, 218, 218);
+  box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem rgb(60, 60, 60);
+  &:hover {
+    background-color: rgb(78, 6, 133);
+    scale: 1.1;
+    transition: all 0.1s ease-in-out;
+  }
+
+  &:active {
+    background-color: rgb(98, 70, 45);
+    scale: 1.1;
+    transition: scale 0.1s ease-in-out;
+  }
+}
+
+@media (width <=500px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (width <=350px) {
+  html {
+    font-size: 40%;
+  }
+}
